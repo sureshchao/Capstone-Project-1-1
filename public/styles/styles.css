@@ -1,45 +1,51 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #081e35;
 }
 .container {
-    width: 80%;
     margin: auto;
     overflow: hidden;
-    padding: 20px;
-    background: #fff;
-    margin-top: 20px;
+    background: #0d1c2f;
+    /* 0d1c2f */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1,
 h2,
 h3 {
-    color: #333;
+    padding-left: 1rem;
+    color: #feae6f;
 }
 p {
     line-height: 1.6;
-    color: #666;
+    padding-left: 2rem;
+    color: #f6dcac;
 }
 ul {
     list-style-type: disc;
     padding: 0;
+    padding-left: 3rem;
 }
 li {
+    color: #a4c639; /* #028391  ; */
     margin: 5px 0;
     margin-left: 15px;
 }
 
 .section-title {
-    background: #333;
-    color: #fff;
+    background: #0d1c2f;
+    color: #37dcefd2;
     padding: 10px;
     margin-bottom: 10px;
 }
+.summary-brief {
+    color: #fff;
+}
 .contact-info {
-    background: #eee;
     padding: 10px;
     margin-bottom: 10px;
 }
@@ -49,16 +55,29 @@ li {
 
 .profile-pic {
     text-align: center;
-    margin: 20px 0;
+    padding: 10px;
 }
 
 .profile-pic img {
     border-radius: 50%;
-    width: 160px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    background-color: transparent;
+    display: block;
+    margin: 0 auto;
 }
 header {
+    padding: 2em;
+    margin: 0 auto;
     text-align: center;
+    background-image: url(../../assets/images/bg.jpg); /* Photo by Joanna Kosinska */
+    background-size: cover;
+    background-position: fixed;
+}
+header section {
+    margin: 0 auto;
+    max-width: 640px;
 }
 
 footer {
@@ -79,4 +98,26 @@ footer {
 
 .container {
     padding-bottom: 80px; /* Adjust this value to create enough space for the footer */
+}
+a {
+    color: #1c9c94;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+a {
+    color: #1c9c94;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+.resume-content {
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
