@@ -16,13 +16,25 @@
             href="https://fonts.googleapis.com/icon?family=Material+Icons"
             rel="stylesheet"
         />
+        <link
+            rel="stylesheet"
+            href="https://www.w3schools.com/w3css/4/w3.css"
+        />
+
         <link rel="stylesheet" href="public/styles/styles.css" />
         <title>Suresh Chandra - Resume</title>
     </head>
     <body>
+        <div class="navbar">
+            <a href="#profile">ABOUT</a>
+            <a href="#experience">EXPERIENCE</a>
+            <a href="#education">EDUCATION</a>
+            <a href="#course">SKILLS</a>
+        </div>
+
         <div class="container">
             <header>
-                <div class="profile-pic">
+                <div id="profile" class="profile-pic">
                     <img
                         src="./assets/images/Profile.png"
                         alt="Suresh Chandra"
@@ -83,7 +95,7 @@
                     </p>
                 </div>
             </header>
-            <div class="resume-content">
+            <div id="experience" class="resume-content">
                 <section>
                     <h2 class="section-title">Professional Experience</h2>
                     <h3>Software Engineer | NCS PTE LTD</h3>
@@ -155,7 +167,7 @@
                 </section>
 
                 <section>
-                    <h2 class="section-title">Education</h2>
+                    <h2 id="education" class="section-title">Education</h2>
                     <h3>
                         Bachelor of Science in Computer Science in Real-Time
                         Interactive Simulation (BSCS RTIS)
@@ -224,7 +236,9 @@
                 </section>
 
                 <section>
-                    <h2 class="section-title">Courses And Certification</h2>
+                    <h2 id="course" class="section-title">
+                        Courses And Certification
+                    </h2>
                     <p>NCS Nucleus Programme</p>
                     <ul>
                         <li>Professional Scrum Developer I</li>
@@ -291,4 +305,5 @@
             document.getElementById("copyright").textContent = footerText;
         </script>
     </body>
+    <script type="text/javascript" src="index.js"></script>
 </html>
