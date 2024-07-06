@@ -102,6 +102,8 @@ header {
     background-image: url(../../assets/images/bg.jpg); /* Photo by Joanna Kosinska */
     background-size: cover;
     background-position: fixed;
+    display: flex;
+    flex-direction: column;
 }
 header section {
     margin: 0 auto;
